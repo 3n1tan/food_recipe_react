@@ -23,7 +23,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     background-color: #A4BC92;
-    padding: 1.5rem;
+    padding: 1rem;
 
     a {
         text-decoration: none;
@@ -36,14 +36,19 @@ const Container = styled.div`
 
     .nav ul {
         display: flex;
-        gap:2rem;
+        gap:6rem;
         list-style: none;
         justify-content: space-between;
-
     }
 
-    li {
-        font-size: 20px;
+    li a {
+        font-size: 25px;
+        color: white;
+    }
+
+    li a:hover {
+        color: red;
+        transition: 0.5s;
     }
 
 `

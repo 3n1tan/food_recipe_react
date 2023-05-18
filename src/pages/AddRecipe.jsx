@@ -16,13 +16,12 @@ const AddRecipe = () => {
             </div>
             <div>
                 <label htmlFor="">Recipe is from:</label>
-                <input type="text" name='country' list='country'/>
-                <datalist id='country'>
+                <select name="delivery" id="delivery">
+                    <option value="empty" selected disabled></option>
                     <option value="Afghanistan"></option>
-                    <option value="Nigeria"></option>
-                    <option value="Finland"></option>
-                    <option value="Scotland"></option>
-                </datalist>
+                    <option value="Lagos"></option>
+                    <option value="New York"></option>
+               </select>
             </div>
             <div>
                 <textarea name="" id="" cols="30" rows="10" placeholder='Enter decsription'></textarea>
