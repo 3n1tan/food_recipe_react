@@ -5,6 +5,7 @@ import RecipeList from './pages/RecipeList'
 import Layout from './pages/Layout'
 import AddRecipe from './pages/AddRecipe'
 import RecipeInfo from './pages/RecipeInfo'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='createrecipe' element={<AddRecipe />} />
           <Route path='recipelist/:recipeinfo' element={<RecipeInfo />} />
         </Routes>
+      <Footer />
       
 
      

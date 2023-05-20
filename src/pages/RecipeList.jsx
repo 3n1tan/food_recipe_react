@@ -79,7 +79,9 @@ padding-left: 20rem;
 }
 
 p {
-    margin-left: 10rem;
+    margin-left: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: blue;
     font-size: 3rem;
 

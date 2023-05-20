@@ -24,6 +24,8 @@ const Container = styled.div`
     justify-content: space-between;
     background-color: #A4BC92;
     padding: 1rem;
+    text-indent: 2rem;
+    height: 7vh;
 
     a {
         text-decoration: none;
