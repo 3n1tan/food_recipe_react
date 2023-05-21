@@ -34,6 +34,7 @@ const RecipeInfo = () => {
       <img src={recipeInfo?.imageURL} alt={recipeInfo?.name} />
       <h3>Preparations:</h3>
       <p className='steps'>{recipeInfo?.steps}</p><br />
+      <p><b>Author:</b> {recipeInfo?.author}</p><br />
       <p className='origin'><b>Country:</b> {recipeInfo?.origin}</p>
       <div>
         <h3>Ingredients</h3>
@@ -53,6 +54,7 @@ const RecipeInfo = () => {
 export default RecipeInfo
 
 const Container = styled.div`
+
 * {
   font-size: 22px;
 }
@@ -70,6 +72,7 @@ h3 {
   -webkit-box-shadow: 5px 5px 15px 5px #000000; 
   box-shadow: 5px 5px 15px 5px #000000;
   border-radius: 10px;
+
 
   img {
     width: 350px;

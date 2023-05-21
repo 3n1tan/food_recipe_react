@@ -18,7 +18,7 @@ const Container = styled.div`
 
 p {
     margin-left: 45rem;
-    margin-top: 5rem;
+    font-size:20px;
     
 }
 

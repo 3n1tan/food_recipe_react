@@ -20,9 +20,6 @@ function App() {
           <Route path='recipelist/:recipeinfo' element={<RecipeInfo />} />
         </Routes>
       <Footer />
-      
-
-     
     </>
   )
 }

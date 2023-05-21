@@ -19,7 +19,7 @@ const BodyLinks = () => {
             linkdetails="Add custom recipes"
         />
         <LinkCards 
-            heading="Want to know more about our projects"
+            heading="Learn more about our projects"
             details="Visit our programme homepage"
             link="https://en.bc.fi/qualifications/full-stack-web-developer-program/"
             linkdetails="Go to Helsinki Business College Homepage"

@@ -63,6 +63,7 @@ export default RecipeList;
 
 const Wrapper = styled.div`
 padding-left: 20rem;
+margin-bottom: 5rem;
 .recipe_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
