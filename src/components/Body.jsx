@@ -16,7 +16,7 @@ export default Body
 
 const Container = styled.div`
     height: 70vh;
-    background-image: url('src/assets/Images/food2.jpg');
+    background-image: url('src/assets/Images/food.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 20%;
