@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components'
 
-const IngredientAdd = ({quantityChange, nameChange, i}) => {
+const IngredientAdd = ({quantityAdd, nameAdd, i}) => {
   return (
     <Container>
         <div>
