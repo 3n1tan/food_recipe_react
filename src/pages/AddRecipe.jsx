@@ -3,7 +3,6 @@ import { styled } from 'styled-components'
 import axios from 'axios';
 import IngredientAdd from '../UI/IngredientAdd';
 
-
 const AddRecipe = () => {
     const [recipe, setRecipe] = useState({
         id: null,
@@ -47,6 +46,7 @@ const AddRecipe = () => {
       };
     
       const handleSubmit = (e) => {
+        e.preventDefault();
         axios
           .post("http://localhost:8000/recipes", recipe)
           .then((res) => {
@@ -86,14 +86,14 @@ const AddRecipe = () => {
             </div>
             <div>
                 <label htmlFor="ingredients">Ingredients</label>
-                 {ingredients.map((i) => (
+                 {ingredients.map(( i) => (
                     <IngredientAdd
                     key={i}
                     index={i}
-                    quantityChange={quantityAdd}
-                    nameChange={nameAdd}
+                    quantityAdd={quantityAdd}
+                    nameAdd={nameAdd}
                     />
-                ))};
+                ))}
             </div>
             <button onClick={addNewIngredientButton}>Add more</button>
             <label htmlFor="steps">Steps</label>
@@ -113,6 +113,57 @@ const AddRecipe = () => {
 export default AddRecipe
 
 const Container = styled.div`
-    height: 800px;
     width: 600px;
+    border: 1px solid black;
+    background-color: cyan;
+    margin-top: 3rem;
+    margin-left: 40vw;
+    border-radius: 10px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      h2 {
+        padding-left: 10rem;
+      }
+      
+      h2, button, textarea {
+        margin-bottom: 1rem;
+      }
+      
+      div {
+        margin-bottom: 1rem;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      button {
+        padding: 0.5rem 1rem;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
 `
+

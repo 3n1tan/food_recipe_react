@@ -6,11 +6,11 @@ const IngredientAdd = ({quantityChange, nameChange, i}) => {
     <Container>
         <div>
             <label htmlFor="quantity">Quantity</label>
-            <input type="number" id='quantity' name='quantity' onChange={(event)=> quantityChange(event, i)} />
+            <input type="number" id='quantity' name='quantity' onChange={(event)=> quantityAdd(event, i)} />
         </div>
         <div>
             <label htmlFor="name">Name</label>
-            <input type="text" id='name' name='name' onChange={(event)=> nameChange(event, i)} />
+            <input type="text" id='name' name='name' placeholder='Enter ingredient name' onChange={(event)=> nameAdd(event, i)} />
         </div>
     </Container>
   )
