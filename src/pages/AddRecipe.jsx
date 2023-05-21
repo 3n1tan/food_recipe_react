@@ -18,13 +18,13 @@ const AddRecipe = () => {
       ]);
     
       const changeHandler = (event) => {
-        event.preventDefault();
-        setRecipe({ ...recipe, [event.target.name]: event.target.value });
+        const { name, value } = event.target;
+        setRecipe((prevRecipe) => ({ ...prevRecipe, [name]: value }));
       };
 
       const addNewIngredientButton = (e) => {
         e.preventDefault();
-        setIngredients([...ingredients, { quantity: "", name: "" }]);
+        setIngredients((prevIngredients) => [...prevIngredients, { quantity: '', name: '' }]);
       };
     
       const quantityAdd = (event, i) => {
@@ -33,7 +33,7 @@ const AddRecipe = () => {
           ...newIngredients[i],
           quantity: event.target.value,
         };
-        setRecipe({ ...recipe, ingredients: newIngredients });
+        setRecipe((prevRecipe) => ({ ...prevRecipe, ingredients: newIngredients }));
       };
     
       const nameAdd = (event, i) => {
@@ -42,7 +42,7 @@ const AddRecipe = () => {
           ...newIngredients[i],
           name: event.target.value,
         };
-        setRecipe({ ...recipe, ingredients: newIngredients });
+        setRecipe((prevRecipe) => ({ ...prevRecipe, ingredients: newIngredients }));
       };
     
       const handleSubmit = (e) => {
