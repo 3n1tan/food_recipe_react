@@ -6,7 +6,7 @@ const Body = () => {
   return (
     <Container>
         <p>3at1t</p>
-        <p>Building world's foremost app using React</p>
+        <p>Building a foremost app using React</p>
         <button><Link to="/recipelist">Browse recipes</Link></button>
     </Container>
   )
