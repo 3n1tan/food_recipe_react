@@ -85,7 +85,7 @@ const AddRecipe = () => {
                 <input type="text" id="image" name="imageURL" placeholder='insert image link' onChange={changeHandler} />
             </div>
             <div>
-                <label htmlFor="ingredients">Ingredients and Ingrdedients</label>
+                <label htmlFor="ingredients">Ingredients to be added</label>
                  {ingredients.map(( i) => (
                     <IngredientAdd
                     key={i}
