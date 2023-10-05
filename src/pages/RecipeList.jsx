@@ -44,7 +44,7 @@ const RecipeList = () => {
             id="search"
             placeholder="Search for recipes by name"
             onChange={searchInputHandler}/>
-            <p>Our tasty in-house recipes</p>
+            <p>Our tasty local recipes</p>
         <div className="recipe_cards">
             {searchFilter.map((card) => (
             <RecipeCard
