@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Container>
         <p>
-        &#169; Copyright, 2023. All rights reserved Enitan Odupitan.
+        &#169; Copyright, 2023 and 2024. All rights reserved Enitan Odupitan.
         </p>
 
     </Container>
